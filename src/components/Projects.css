@@ -1,0 +1,132 @@
+.project {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.patent h1 {
+    color: #ED2F80;
+    font-size: 60px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.patent-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+}
+
+.flip-container {
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    margin-top: 30px;
+    padding: 1rem;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 2px #f78dbb;
+}
+
+.flip-card-front {
+    background-color: #fff;
+}
+
+.flip-card-back {
+    background-color: #ED2F80;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px  #f78dbb;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.patent-text{
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+    .patent h1 {
+        font-size: 40px; /* Smaller font size for mobile */
+    }
+
+    .flip-container {
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .patent-img {
+        justify-content: center; /* Center images on smaller screens */
+    }
+
+    .patent-text{
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .flip-card-back h2{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .patent h1 {
+        font-size: 40px; /* Even smaller font size for very small screens */
+    }
+
+    .flip-container {
+        width: 350px;
+        height: 350px;
+        margin-top: 15px;
+    }
+    .flip-card-back h2{
+        font-size: 15px;
+    }
+}

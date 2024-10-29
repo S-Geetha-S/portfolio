@@ -1,0 +1,101 @@
+/* Full-width background for internships section */
+.full-width-background {
+    width: 100%;
+    background-color: #fed5fd;
+    padding: 50px 0; /* Adds padding to top and bottom */
+}
+
+/* Centered content within the full-width background */
+.internships-section {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px; /* Adds padding for small screens */
+    text-align: left;
+}
+
+/* Title */
+.internships-section h2 {
+    text-align: center;
+    color: #ED2F80;
+    font-size: 60px;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Internship list styling */
+.internships-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Internship item */
+.internship-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f78dbb;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Add background for each item */
+}
+
+/* Company logo */
+.company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid #f78dbb;
+}
+
+/* Details */
+.internship-details {
+    flex-grow: 1;
+}
+
+.company-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.role {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.duration {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .internships-section h2 {
+        font-size: 40px;
+    }
+    
+    .company-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .internship-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .company-name, .role, .duration {
+        text-align: left;
+        font-size: 1rem;
+    }
+}

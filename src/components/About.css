@@ -1,0 +1,144 @@
+.about {
+    width: 100%;
+    background-color: #fed5fd;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  /* Left Section Styling */
+  .about-left-section {
+    margin: 0;
+    max-width: 500px;
+    margin-top: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .about-left-section h1,
+  .about-right-section h1 {
+    color: #ED2F80;
+    font-size: 60px;
+    margin-top: -2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .about-left-section p {
+    font-size: 29px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .about-left-section a {
+    font-size: 40px;
+    color: #ED2F80;
+  }
+  
+  a:hover {
+    font-size: 40px;
+    color: #9d9898;
+  }
+  
+  .react-icon {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  
+  /* Right Section Styling */
+  .about-right-section {
+    margin: 0;
+    max-width: 600px;
+    border: solid 1px #333;
+    padding: 3rem;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 40vh;
+    margin-top: 60px;
+    border-radius: 20px;
+  }
+  
+  .icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 900px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+  
+    .about-left-section h1,
+    .about-left-section p {
+      text-align: center;
+    }
+  
+    .react-icon {
+      justify-content: center;
+    }
+  
+    .about-right-section {
+      max-width: 500px;
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .about-left-section h1,
+    .about-right-section h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .about-left-section p {
+      font-size: 20px;
+      padding: 10px;
+    }
+  
+    .about-right-section {
+      max-width: 90%;
+      padding: 1.5rem;
+      height: auto;
+    }
+  
+    .react-icon {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    .icon {
+      font-size: 24px;
+      grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .about-left-section h1,
+    .about-right-section h1 {
+      font-size: 35px;
+    }
+  
+    .about-left-section p {
+      font-size: 18px;
+    }
+  
+    .about-right-section {
+      padding: 1rem;
+    }
+  
+    .icon {
+      font-size: 20px;
+      grid-template-columns: 1fr; /* Stacks icons in one column on very small screens */
+      gap: 1rem;
+    }
+  }
+  
