@@ -20,15 +20,15 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_1n52k9e', // Replace with your service ID
-      'template_iuabg19', // Replace with your template ID
+      'service_7wq50fv', // Replace with your service ID
+      'template_bzgncxj', // Replace with your template ID
       {
         from_name: formData.name,
         from_email: formData.email, // Include the sender's email
         message: formData.message,
         to_name: 'Recipient Name', // You can hardcode this or set dynamically
       },
-      '7K3HNSZBjsTXBoLDM' // Replace with your public user ID
+      'hJUblOoS8IqH4218S' // Replace with your public user ID
     ).then((result) => {
       console.log('Email sent successfully:', result.text);
       alert('Message sent!');
